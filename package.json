@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://yjh-project-study-group.github.io/campus-link",
+  "homepage": "https://Jihwan0210.github.io/React_CampusLink",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

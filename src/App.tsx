@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import MainPage from './pages/MainPage';
 import LoginPage from './pages/LoginPage';
@@ -12,17 +12,17 @@ import ErrorPage from './pages/ErrorPage';
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />S
           <Route path="/clubs" element={<ClubsPage />} />
           <Route path="/clubs/:id" element={<ClubDetailPage />} />
           <Route path="/create" element={<CreatePage />} />
           <Route path="/mypage" element={<MyPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   );
 }
