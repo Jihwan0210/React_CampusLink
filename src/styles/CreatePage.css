@@ -1,0 +1,30 @@
+.create-page__inner {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 28px;
+}
+
+.create-page__eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.create-page__title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.4px;
+  margin-bottom: 32px;
+}
+
+.create-page__card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 36px;
+  box-shadow: var(--shadow-md);
+}

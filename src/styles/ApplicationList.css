@@ -1,0 +1,111 @@
+.application-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.application-list__empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1.5px dashed var(--border);
+}
+
+.application-list__empty-icon {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.application-list__empty-text {
+  color: var(--text-secondary);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.application-list__empty-link {
+  display: inline-block;
+  padding: 9px 22px;
+  background: var(--navy2);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+
+.application-list__empty-link:hover {
+  opacity: 0.88;
+}
+
+.application-list__item {
+  text-decoration: none;
+}
+
+.application-list__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: box-shadow 0.15s;
+}
+
+.application-list__card:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.application-list__card-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.application-list__badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.application-list__badge--club    { background: #EFF6FF; color: #1D4ED8; }
+.application-list__badge--study   { background: #F0FDF4; color: #15803D; }
+.application-list__badge--contest { background: #FFF7ED; color: #C2410C; }
+
+.application-list__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.application-list__date {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--mono);
+}
+
+.application-list__card-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.application-list__cancel-btn {
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #FECACA;
+  background: var(--red-light);
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.application-list__cancel-btn:hover {
+  background: #FECACA;
+}

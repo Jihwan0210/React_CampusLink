@@ -1,0 +1,192 @@
+.my-page__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 28px;
+}
+
+.my-page__profile {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 28px 32px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.my-page__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--navy2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.my-page__name {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+  margin-bottom: 4px;
+}
+
+.my-page__desc {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.my-page__desc strong {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* 탭 */
+.my-page__tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.my-page__tab {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.my-page__tab:hover {
+  color: var(--text-primary);
+}
+
+.my-page__tab.active {
+  color: var(--navy2);
+  border-bottom-color: var(--navy2);
+}
+
+.my-page__count-badge {
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--blue-light);
+  color: var(--blue);
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+}
+
+.my-page__tab.active .my-page__count-badge {
+  background: var(--navy2);
+  color: #fff;
+}
+
+/* 내가 등록한 글 목록 */
+.my-page__club-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.my-page__club-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  transition: box-shadow 0.15s;
+}
+
+.my-page__club-item:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.my-page__club-item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.my-page__club-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.my-page__club-badge--club    { background: #EFF6FF; color: #1D4ED8; }
+.my-page__club-badge--study   { background: #F0FDF4; color: #15803D; }
+.my-page__club-badge--contest { background: #FFF7ED; color: #C2410C; }
+
+.my-page__club-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.my-page__club-item-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.my-page__club-status {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.my-page__club-status--open   { color: var(--green); background: var(--green-light); }
+.my-page__club-status--closed { color: var(--red);   background: var(--red-light); }
+
+.my-page__club-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--mono);
+}
+
+/* 빈 상태 */
+.my-page__empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1.5px dashed var(--border);
+}
+
+.my-page__empty-icon { font-size: 40px; margin-bottom: 12px; }
+
+.my-page__empty-text {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.my-page__empty-link {
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--navy2);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}

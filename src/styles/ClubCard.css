@@ -1,0 +1,114 @@
+.club-card {
+  display: block;
+  text-decoration: none;
+}
+
+.club-card__inner {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s, transform 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.club-card__inner:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.club-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.club-card__badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.02em;
+}
+
+.club-card__badge--club    { background: #EFF6FF; color: #1D4ED8; }
+.club-card__badge--study   { background: #F0FDF4; color: #15803D; }
+.club-card__badge--contest { background: #FFF7ED; color: #C2410C; }
+
+.club-card__status {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.club-card__status--open   { color: var(--green); background: var(--green-light); }
+.club-card__status--closed { color: var(--red);   background: var(--red-light); }
+
+.club-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+
+.club-card__desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  flex: 1;
+  margin: 0 0 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.club-card__footer {}
+
+.club-card__progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.club-card__progress-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.club-card__progress-count {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--mono);
+}
+
+.club-card__progress-count--open   { color: var(--text-primary); }
+.club-card__progress-count--closed { color: var(--red); }
+
+.club-card__progress-count span {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.club-card__progress-bar {
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.club-card__progress-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.club-card__progress-fill--open   { background: var(--blue); }
+.club-card__progress-fill--closed { background: var(--red); }

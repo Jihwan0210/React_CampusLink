@@ -1,0 +1,125 @@
+.club-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.club-form__error {
+  background: var(--red-light);
+  border: 1px solid #FECACA;
+  color: #B91C1C;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+}
+
+.club-form__field {}
+
+.club-form__label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 7px;
+}
+
+.club-form__input,
+.club-form__select,
+.club-form__textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--text-primary);
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.club-form__input:focus,
+.club-form__select:focus,
+.club-form__textarea:focus {
+  border-color: var(--blue);
+}
+
+.club-form__select {
+  cursor: pointer;
+}
+
+.club-form__textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+.club-form__count {
+  text-align: right;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.club-form__members-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.club-form__members-input {
+  width: 100px;
+  padding: 11px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--text-primary);
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.club-form__members-input:focus {
+  border-color: var(--blue);
+}
+
+.club-form__members-hint {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.club-form__buttons {
+  display: flex;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.club-form__cancel-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  background: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: background 0.15s;
+}
+
+.club-form__cancel-btn:hover {
+  background: var(--bg);
+}
+
+.club-form__submit-btn {
+  flex: 2;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--navy2);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  transition: opacity 0.15s;
+}
+
+.club-form__submit-btn:hover {
+  opacity: 0.88;
+}

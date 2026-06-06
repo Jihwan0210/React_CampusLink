@@ -1,0 +1,227 @@
+/* ── 히어로 ── */
+.main__hero {
+  background: var(--navy);
+  padding: 80px 28px 72px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__hero-glow-right {
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37,99,235,0.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.main__hero-glow-left {
+  position: absolute;
+  bottom: -60px; left: -60px;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37,99,235,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.main__hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main__hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(37,99,235,0.2);
+  border: 1px solid rgba(37,99,235,0.4);
+  border-radius: var(--radius-full);
+  padding: 5px 14px;
+  margin-bottom: 24px;
+}
+
+.main__hero-tag-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #60A5FA;
+  display: inline-block;
+}
+
+.main__hero-tag-text {
+  font-size: 12px;
+  color: #93C5FD;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.main__hero-title {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+}
+
+.main__hero-title-gradient {
+  background: linear-gradient(135deg, #60A5FA, #818CF8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__hero-desc {
+  font-size: 17px;
+  color: #94A3B8;
+  line-height: 1.7;
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+
+.main__hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.main__hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  background: var(--blue);
+  color: #fff;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(37,99,235,0.4);
+  transition: opacity 0.15s;
+}
+
+.main__hero-btn-primary:hover { opacity: 0.88; }
+
+.main__hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  background: rgba(255,255,255,0.08);
+  color: #CBD5E1;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.main__hero-btn-secondary:hover { background: rgba(255,255,255,0.12); }
+
+.main__hero-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  flex-wrap: wrap;
+}
+
+.main__hero-stat-value {
+  font-size: 26px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.main__hero-stat-label {
+  font-size: 12px;
+  color: #64748B;
+  margin-top: 3px;
+}
+
+/* ── 최신 모집글 ── */
+.main__latest {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 28px;
+}
+
+.main__latest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+}
+
+.main__latest-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.main__latest-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+}
+
+.main__latest-more {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.main__latest-more:hover { opacity: 0.7; }
+
+.main__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* ── CTA ── */
+.main__cta {
+  background: var(--blue-light);
+  border-top: 1px solid var(--blue-mid);
+  padding: 52px 28px;
+  text-align: center;
+}
+
+.main__cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main__cta-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.main__cta-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.main__cta-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: var(--navy2);
+  color: #fff;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: opacity 0.15s;
+}
+
+.main__cta-btn:hover { opacity: 0.88; }

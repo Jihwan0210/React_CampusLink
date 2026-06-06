@@ -1,0 +1,139 @@
+.login-page {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page__top {
+  padding: 20px 32px;
+}
+
+.login-page__logo {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-page__logo-icon {
+  width: 28px; height: 28px;
+  background: var(--navy2);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page__logo-text {
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--navy);
+  letter-spacing: -0.3px;
+}
+
+.login-page__body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.login-page__container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.login-page__heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-page__title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.4px;
+}
+
+.login-page__subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.login-page__card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+}
+
+.login-page__error {
+  background: var(--red-light);
+  border: 1px solid #FECACA;
+  color: #B91C1C;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.login-page__field {
+  margin-bottom: 16px;
+}
+
+.login-page__label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 7px;
+}
+
+.login-page__input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.15s;
+  background: #fff;
+}
+
+.login-page__input:focus {
+  border-color: var(--blue);
+}
+
+.login-page__submit-btn {
+  width: 100%;
+  padding: 13px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--navy2);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+  transition: opacity 0.15s;
+}
+
+.login-page__submit-btn:hover { opacity: 0.88; }
+
+.login-page__hint {
+  margin-top: 20px;
+  padding: 12px 14px;
+  background: var(--blue-light);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--blue-mid);
+  text-align: center;
+  font-size: 12px;
+  color: #3B82F6;
+  font-family: var(--mono);
+}
